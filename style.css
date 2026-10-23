@@ -79,3 +79,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .foot-links{display:flex;flex-direction:column;gap:.6rem}
 .social{display:flex;gap:.5rem}.social img{display:block;border-radius:4px}
 .legal{border-top:1px solid var(--line);padding-top:1rem;font-size:.85rem}.legal p{margin:.25rem 0}.legal img{display:block;margin-bottom:.5rem}
+.btn:disabled{background:#9aa5a0;border-color:#9aa5a0;cursor:not-allowed}
+.captcha-msg{margin:0;color:#9b1c1c;font-size:.95rem}
+.g-recaptcha{max-width:100%;overflow-x:auto}

@@ -82,3 +82,4 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .btn:disabled{background:#9aa5a0;border-color:#9aa5a0;cursor:not-allowed}
 .captcha-msg{margin:0;color:#9b1c1c;font-size:.95rem}
 .g-recaptcha{max-width:100%;overflow-x:auto}
+.prose h2{margin-top:2.25rem}.prose h3{margin-top:1.5rem;font-size:1.15rem}

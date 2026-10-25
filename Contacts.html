@@ -35,7 +35,7 @@
     <label>Message<textarea name="message" rows="5" required></textarea></label>
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
     <!-- CAPTCHA: replace YOUR_RECAPTCHA_SITE_KEY with the SITE key (not the secret key) from google.com/recaptcha/admin (choose reCAPTCHA v2, "I'm not a robot" checkbox) -->
-    <div class="g-recaptcha" id="captcha" data-sitekey="n6Ld2swAuAAAAAOfk-NguNCWiHzV_-Ljo09xYL1rB" data-callback="captchaDone" data-expired-callback="captchaExpired"></div>
+    <div class="g-recaptcha" id="captcha" data-sitekey="6Ld2swAuAAAAAOfk-NguNCWiHzV_-Ljo09xYL1rB" data-callback="captchaDone" data-expired-callback="captchaExpired"></div>
     <p class="captcha-msg" id="captcha-msg" role="alert" hidden>Please check the box to confirm you are not a robot.</p>
     <button class="btn" type="submit" id="send-btn">Send message</button>
   </form>
@@ -52,7 +52,7 @@
   var box=document.getElementById('captcha'), btn=document.getElementById('send-btn'),
       form=btn.form, msg=document.getElementById('captcha-msg');
   // Enforce the captcha only once a real site key has been added
-  var active=box.getAttribute('data-sitekey')!=='6Ld2swAuAAAAAOfk-NguNCWiHzV_-Ljo09xYL1rB';
+  var active=box.getAttribute('data-sitekey')!=='YOUR_RECAPTCHA_SITE_KEY';
   if(active){btn.disabled=true;}
   window.captchaDone=function(){btn.disabled=false;msg.hidden=true;};
   window.captchaExpired=function(){if(active){btn.disabled=true;}};

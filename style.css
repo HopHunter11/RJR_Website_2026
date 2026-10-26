@@ -1,6 +1,6 @@
 :root{--green:#1d6b34;--green-dark:#134a24;--green-soft:#e6f0e9;--grey:#f1f3f2;--line:#d8dedb;--ink:#1c2420;--muted:#55605a;--r:6px}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;font:400 1.0625rem/1.65 "Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}
 h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em;color:var(--green-dark)}
@@ -10,6 +10,7 @@ h3{font-size:1.35rem}
 a{color:var(--green)}
 img{max-width:100%;height:auto}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.hero a:focus-visible,.page-head a:focus-visible,.cta a:focus-visible{outline-color:#fff}
 .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
 .narrow{max-width:760px}
 .skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:#fff;color:#000;padding:.5rem 1rem;z-index:99}
@@ -33,7 +34,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
  .nav .nav-call{text-align:center;margin-top:.75rem}
 }
 .hero{position:relative;isolation:isolate;overflow:hidden;background:var(--green);color:#fff;padding:clamp(1.75rem,4vw,2.75rem) 0}
-/* Optional background image: set --hero-img on the <section class="hero"> in index.html.
+/* Optional background image: set --hero-img on the <section class="hero"> in any page.
    Adjust --hero-opacity (0 = invisible, 1 = fully visible). Text stays solid on top. */
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background-image:var(--hero-img,none);background-size:cover;background-position:center;opacity:var(--hero-opacity,.3)}
 .hero h1{max-width:26ch;color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);margin-bottom:.35em}
@@ -55,7 +56,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .area-card strong{display:block;font:600 1.3rem "Newsreader",Georgia,serif;color:var(--green-dark)}
 .area-card span{font-size:.95rem;color:var(--muted)}
 .more{margin-top:2rem;color:var(--muted)}
-.split{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:start}
+.split{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:start}.split>*{min-width:0}
 @media (max-width:800px){.split{grid-template-columns:1fr}}
 .fig{display:block;justify-self:center;border-radius:var(--r);max-width:100%;height:auto}
 .prose p{max-width:68ch}

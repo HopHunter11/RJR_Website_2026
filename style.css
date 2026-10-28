@@ -87,7 +87,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .form-success{background:var(--green-soft);border:1px solid var(--green);border-left:6px solid var(--green);border-radius:var(--r);padding:1.5rem}
 .form-success h2{margin-bottom:.25em}.form-success p{margin:0}
 .form-error{margin:0;padding:.75rem 1rem;border:1px solid #9b1c1c;border-radius:var(--r);background:#fdeeee;color:#7a1414;font-size:.95rem}
-/* NEW: taller property-search frame on phones */
+/* Taller property-search frame on phones (firm listings page only) */
 @media (max-width:800px){
-  .idx-full iframe{height:2200px}
+  .idx-tall iframe{height:2200px}
 }

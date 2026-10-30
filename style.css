@@ -95,3 +95,4 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff}
 .social a:hover{background:var(--green-dark)}
 .social svg{width:22px;height:22px;fill:currentColor}
+.card a,.contact-info a,.foot>div>a,.foot-links>a{display:inline-block;padding:.45rem 0}

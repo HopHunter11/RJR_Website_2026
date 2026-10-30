@@ -91,3 +91,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 @media (max-width:800px){
   .idx-tall iframe{height:2200px}
 }
+.social{display:flex;gap:.6rem}
+.social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff}
+.social a:hover{background:var(--green-dark)}
+.social svg{width:22px;height:22px;fill:currentColor}

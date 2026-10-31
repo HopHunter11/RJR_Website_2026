@@ -29,11 +29,8 @@
   <p class="lead">Tell us what you are looking for and we will reply by phone or email.</p>
 </div></section>
 <section class="section"><div class="wrap split">
-<!-- <section class="page-head"><div class="wrap"><h1>Contact us</h1><p class="lead">Tell us what you are looking for and we will reply by phone or email.</p></div></section>
-<section class="section"><div class="wrap split"> -->
   <div>
   <form class="form" action="https://formspree.io/f/xljjjrkl" method="POST">
-    <!-- Replace YOUR_FORM_ID with the ID from your free Formspree form (formspree.io) -->
     <label>Your name<input name="name" required autocomplete="name"></label>
     <label>Email<input type="email" name="email" required autocomplete="email"></label>
     <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
@@ -42,7 +39,6 @@
     </label>
     <label>Message<textarea name="message" rows="5" required></textarea></label>
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-    <!-- CAPTCHA: replace YOUR_RECAPTCHA_SITE_KEY with the SITE key (not the secret key) from google.com/recaptcha/admin (choose reCAPTCHA v2, "I'm not a robot" checkbox) -->
     <div class="g-recaptcha" id="captcha" data-sitekey="6Ld2swAuAAAAAOfk-NguNCWiHzV_-Ljo09xYL1rB" data-callback="captchaDone" data-expired-callback="captchaExpired"></div>
     <p class="captcha-msg" id="captcha-msg" role="alert" hidden>Please check the box to confirm you are not a robot.</p>
     <p class="form-error" id="form-error" role="alert" hidden></p>
